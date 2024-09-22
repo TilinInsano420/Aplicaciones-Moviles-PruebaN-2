@@ -67,9 +67,4 @@ public class MenuPrincipal extends AppCompatActivity {
         startActivity(b);
 
     }
-
-    public void ver_gastos(View v){
-        Intent b = new Intent(this,Ver_gastos_mes.class);
-        startActivity(b);
-    }
 }

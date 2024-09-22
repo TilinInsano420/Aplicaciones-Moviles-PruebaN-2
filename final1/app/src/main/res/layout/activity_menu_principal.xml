@@ -107,7 +107,6 @@
             android:layout_marginStart="7dp"
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="15dp"
-            android:onClick="ver_gastos"
             android:text="@string/vergastos"
             android:textColor="@color/blancotexto"
             app:layout_constraintBottom_toTopOf="@+id/Salir"
