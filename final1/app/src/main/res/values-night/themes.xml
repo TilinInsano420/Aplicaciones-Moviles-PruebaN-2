@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Final" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/botonesgris</item>
+        <item name="android:background">@color/verdedarkprima</item>
+        <item name="textAppearanceButton">@color/blancotexto</item>
+        <item name="color">@color/blancotexto</item>
+        <item name="colorPrimaryVariant">@color/blancotexto</item>
+    </style>
+</resources>

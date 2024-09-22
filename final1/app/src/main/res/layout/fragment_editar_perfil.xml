@@ -1,0 +1,196 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/botEditar"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Editar"
+        android:textColor="@color/blancotexto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/botCancelar"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cancelar"
+        android:textColor="@color/blancotexto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TituloEditarPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="116dp"
+        android:text="@string/EditarP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/blancotexto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="387dp"
+        android:layout_height="539dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/borde_constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloEditarPerfil">
+
+        <TextView
+            android:id="@+id/Nombreusuario"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/verdecuadro"
+            android:text="@string/NomH"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/blancotexto"
+            app:layout_constraintBottom_toTopOf="@+id/Eusuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/Eusuario"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/edittext_borde"
+            android:hint="@string/NomH"
+            android:inputType="textPersonName"
+            android:textColor="@color/blancotexto"
+            android:textColorHint="@color/blancotexto"
+            app:layout_constraintBottom_toTopOf="@+id/CorreoElectronico"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/CorreoElectronico"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/verdecuadro"
+            android:text="@string/CorreoC"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/blancotexto"
+            app:layout_constraintBottom_toTopOf="@+id/Eemail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/Eemail"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_borde"
+            android:hint="@string/CorreoH"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/blancotexto"
+            android:textColorHint="@color/blancotexto"
+            app:layout_constraintBottom_toTopOf="@+id/ContraseñaActual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/ContraseñaActual"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/verdecuadro"
+            android:text="@string/contraactual"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/blancotexto"
+            app:layout_constraintBottom_toTopOf="@+id/EcontraActual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/EcontraActual"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_borde"
+            android:hint="@string/contraactual"
+            android:inputType="textPassword"
+            android:textColor="@color/blancotexto"
+            android:textColorHint="@color/blancotexto"
+            app:layout_constraintBottom_toTopOf="@+id/NuevaContraseña"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/NuevaContraseña"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/verdecuadro"
+            android:text="@string/nuevacontra"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/blancotexto"
+            app:layout_constraintBottom_toTopOf="@+id/Econtra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/Econtra"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_borde"
+            android:hint="@string/nuevacontra"
+            android:inputType="textPassword"
+            android:textColor="@color/blancotexto"
+            android:textColorHint="@color/blancotexto"
+            app:layout_constraintBottom_toTopOf="@+id/ConfirmarNContra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/ConfirmarNContra"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/verdecuadro"
+            android:text="@string/nuevacontraC"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/blancotexto"
+            app:layout_constraintBottom_toTopOf="@+id/Econcontra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/Econcontra"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_borde"
+            android:hint="Confirmar nueva contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/blancotexto"
+            android:textColorHint="@color/blancotexto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
